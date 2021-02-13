@@ -1,0 +1,736 @@
+html {
+  font-size: 62.5%; /*Reset para REMS*/
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body
+{
+    font-family: futura_book;
+    overflow: hidden;
+    background: #ffffff;
+    font-weight: 400;
+    position: relative;
+}
+
+
+html, body {
+   width: 100%;
+   overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+}
+.nav-item{
+    font-family: futura_bold;
+}
+nav{
+    background: white;  
+    border-bottom: 3px solid #36ba94;
+}
+.navbar-brand{
+    padding-left: 120px;
+}
+#navbarNav{
+    padding-right: 120px;
+}
+
+
+
+h1, h2, h3, h4 {
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+.heading {
+font-size: 20px;
+}
+.subheading {
+font-size: 14px;
+font-weight: bold;
+padding-bottom: 60px;
+}
+.bold {
+font-weight: bold;
+}
+
+p {
+line-height: 28px;
+font-size: 15px;
+}
+
+a {
+outline: none !important;
+}
+
+hr {
+width: 180px;
+border-color: #CCC;
+}
+
+
+
+.section-title h1 {
+font-size: 24px;
+}
+
+.section-title {
+padding-bottom: 32px;
+}
+
+.medium-icon {
+font-size: 32px !important;
+}
+
+#work,#about, #team, 
+#portfolio, #pricing, #contact {
+ padding-top: 100px;
+padding-bottom: 100px;
+}
+
+
+/*Fondo cuadricula*/
+.catalog .bg
+{
+    background-image: url(../images/Cuadricula.png) ;
+    background-repeat: round;
+    background-size: contain;
+    padding-top: 4rem;
+    padding-left:  8rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+}
+/*Productos catalogo*/
+
+.catalog .grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10rem;
+    row-gap: 2rem;
+}
+
+.product-catalog .Content
+{
+    background-color: white;
+    border: 0.2rem solid #545454 ;
+    border-top: 0.7rem solid #545454;
+    height: 12rem;
+    width: 100%;
+    box-shadow: 0px 1px 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+.product-catalog .Content p
+{
+    line-height: 1.3;
+    font-size: 1.5rem;
+}
+.product-catalog img
+{
+    height:16rem;
+    width:100%;
+}
+.product-catalog h2
+{
+    text-align: center;
+}
+/*Area testimonios-informacion*/
+.test-info
+{
+    display: flex;
+    align-items: center;
+}
+/*testimonios*/
+.testimonios{
+    padding: 1.5rem;
+    background-color: #E7E7E7;
+    height: 35rem;
+}
+.testimonios h2
+{
+    font-size: 2rem;
+}
+.linea {
+    border-top: 0.3rem solid #36ba94;
+    border-radius: 10rem;
+    height: 0.2rem;
+    max-width: 10rem;
+    padding: 0;
+    margin: 0.1rem auto 0 auto;
+  }
+.testimonio-cards
+{
+    display: flex;
+    align-items: center;
+}
+.testimonio-card
+{
+    display: flex;
+    align-items: center;
+}
+.testimonio-foto
+{
+    padding-top: 1rem;
+    height: 13rem;
+    width: 12rem;
+}
+.testimonio-firma
+{
+    height: 4rem;
+    width: 13rem;
+}
+
+.testimonio-card p
+{
+    padding: 3rem;
+    font-size: 1.6rem;
+    text-align: justify;
+    background-image: url(../images/quote.png);
+    background-repeat: no-repeat;
+}
+.testimonio-data h3
+{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.testimonios h2
+{
+    text-align: center;
+    font-size: 1.8rem;
+}
+/*Informacion compania*/
+.compania
+{
+    background-image: url(../images/Gradiente\ 1.png) no-repeat center center;
+    height: 35rem;
+    padding: 3rem;
+}
+.compania h2
+{
+    font-size: 3rem;
+    color: #545454;
+    text-align: left;  
+}
+.linea-blanca {
+    border-top: 0.2rem solid white;
+    height: 0.2rem;
+    max-width: 20rem;
+    padding: 0;
+    margin: 0 auto 0 0;
+  }
+.compania p 
+{
+    font-size: 1.8rem;
+    color: #545454;
+    text-align: justify;
+  
+}
+.compania-boton
+{   
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.9rem;
+    color:#545454;
+    background: none;
+    border: 0.2rem solid white;
+    padding: 0.6rem;
+    
+}
+/*Extra large deices (large desktop,1200px and up)*/
+@media (max-width:1200px){
+    .product-catalog img
+    {
+        height:16rem;
+        width:85%;
+    }
+    .product-catalog .Content p
+    {
+        font-size: 1.6rem;
+    }
+    .testimonio-card p
+    {
+        font-size: 1.6rem;
+    }
+    .compania h2
+    {
+        font-size: 2.5rem;
+    }
+    .compania p 
+    {
+        font-size: 1.6rem;
+    }
+}
+/*LArge devices(desktops,992px and up)*/
+@media (max-width: 992px){
+    
+    .catalog .bg
+    {
+        background-repeat: round;
+        background-size: contain;
+    }
+    .catalog .grid
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 4rem;
+        row-gap: 2rem;
+    }
+    .product-catalog .Content p
+    {
+        line-height: 1.3rem;
+        font-size: 1.4rem;
+    }
+      .product-catalog h2
+    {
+        font-size: 1.3rem;
+    }
+
+    .testimonios{
+        padding: 1rem;
+        height: 30rem;
+    }
+    .testimonio-foto
+    {
+        padding-top: 1rem;
+        height: 8rem;
+        width: 7rem;
+    }
+    .testimonio-firma
+    {
+        height: 3rem;
+        width: 6rem;
+    }
+    .testimonio-card p
+    {
+        font-size: 1.2rem;
+    }
+    .testimonios h2
+    {
+        font-size: 1.6rem;
+    }
+    .testimonio-data h3
+    {
+        font-size: 1rem;
+    }
+
+    .compania
+    {
+        height: 30rem;
+        padding: 2rem;
+    }
+    .compania-boton
+    {   
+        font-size: 1.5rem;
+        padding: 0.4rem;
+    }
+    .compania h2
+    {
+        font-size: 2rem;
+    }
+    .compania p 
+    {
+        font-size: 1.4rem;
+    }
+}
+/*Medium devices (tablets,768px and up)*/
+@media(max-width: 768px)
+{   
+    .catalog .grid
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 7rem;
+        row-gap: 2rem;
+    }
+    .product-catalog .Content
+    {
+        height: 12rem;
+    }
+
+    .test-info
+    {
+        display: block;
+    }
+    .testimonios{
+        height: 25rem;
+    }
+    .compania
+    {
+        height: 21rem;
+    }
+}
+/*Small devices (lanscape phones, 576px and up)*/
+@media(max-width: 576px){
+    .catalog .bg
+    {
+        padding:1.8rem;
+    }
+    .catalog .grid
+    {
+        display: block;
+    }
+    .product-catalog .Content
+    {
+        height: 100%;
+        width: 100%;
+    }
+    .product-catalog img
+    {
+        height:100%;
+        width:100%;
+    }
+    .product-catalog .Content p
+    {
+        font-size: 1.4rem;
+    }
+
+    .testimonio-cards
+    {
+        display: block;
+    }
+    .testimonios{
+        height: 45rem;
+    }
+    .testimonio-card p
+    {
+        font-size: 1.4rem;
+    }
+    .testimonio-foto
+    {
+        padding-top: 1rem;
+        height: 10rem;
+        width: 8rem;
+    }
+
+    .compania-boton
+    {   
+        font-size: 1.4rem;
+        padding: 0.4rem;
+    }
+    .compania h2
+    {
+        font-size: 1.8rem;
+    }
+    .compania p 
+    {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+
+/* ==========================================================================
+contact section
+========================================================================== */
+#contact {
+  background: #3B3B3B url('../images/Imagen\ 16.png') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+}
+#contact h1 {
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-family: futura_bold;
+}
+#contact h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: futura_book;
+  letter-spacing: 1px;
+}
+#contact .medium-icon {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+#contact .contact-info div {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+#contact form {
+  padding-top: 60px;
+}
+#contact .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+  width: 200px;
+  height: 45px;
+}
+#contact .form-control2 {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+  width: 45px;
+  height: 45px;
+
+}
+#contact .form-control:focus {
+  border-color: #545454;
+}
+ .con {
+    display: flex;
+    align-items: center;
+  }
+
+#contact input {
+  height: 40px;
+}
+#contact input[type="submit"] {
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  letter-spacing: 1px;
+  margin-left: 0px;
+  height: 40px;
+  color: #545454;
+}
+#contact input[type="submit"]:hover {
+  color: #000000;
+}
+.redes{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+/* ==========================================================================
+maps
+========================================================================== */
+.horario{
+  background-color: #36BA94;
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  margin-left: 20%;
+}
+
+.textmap{
+  font-size: 30px;
+  color: #fff;
+  font-family: futura_bold;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+#lin{
+    margin-left: 5%;
+}
+
+.map{
+  font-size: 15px;
+  color: #fff;
+  
+  font-family: futura_book;
+  margin-left: 5%;
+}
+/* ==========================================================================
+footer section
+========================================================================== */
+.footer{
+  background-color: #545454;
+  width: 100%;
+  height: 50px;
+  display: flex;
+    align-items: center;
+}
+
+.footer-size{
+  font-size: 20px;
+  color: #fff;
+  font-family: futura_book;
+  margin-left: 10%;
+}
+
+.footer-size2{
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  font-family: futura_book;
+  margin-left: 40%;
+  margin-top: 0px;
+  
+}
+
+
+@media screen and (min-width: 992px) {
+  @-moz-document url-prefix() {
+    #portfolio .col-lg-4,
+    #portfolio .col-md-4 {
+      width: 33.333%;
+    }
+  }    
+}
+
+/* ==========================================================================
+media quires for mobile
+========================================================================== */
+@media (max-width: 440px) {
+  #home {
+    padding-top: 320px;
+    padding-bottom: 320px;
+  }
+  #home h1 {
+    font-size: 22px;
+  }
+  #home h3 {
+    font-size: 12px;
+  }
+}
+/*scollup icon*/
+
+.scrollup {
+	width: 50px;
+	height: 50px;
+	opacity: .3;
+	position: fixed;
+	bottom: 40px;
+	right: 25px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #000;
+	z-index: 10;
+	transition: opacity .5s, background-color .5s;
+	-moz-transition: opacity .5s, background-color .5s;
+	-webkit-transition: opacity .5s, background-color .5s;
+}
+.scrollup:hover {
+	background: #82ca9c;
+}
+.scrollup i {
+	font-size: 13px;
+	position: absolute;
+	color: #fff;
+	left: 50%;
+	top: 50%;
+	margin-top: -7px;
+	margin-left: -6px;
+	text-decoration: none;
+
+}
+
+
+.h1{
+    position: absolute;
+}
+.h2{
+    position: absolute;
+}
+
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #36ba94 !important;
+}
+
+.img{
+    width: 100%;
+    position: relative;
+}
+
+.tipografianb{
+    font-family: futura_bold;
+    color: #7b7b7b;
+    font-size: 15px;
+}
+.tipografia2nb{
+    font-family: futura_bold;
+    color: #d9d9d9;
+    font-size: 15px;
+}
+
+.title1{
+    font-family: futura_bold;
+    color:white;
+    font-size:3vw;
+    padding-left: 8%;
+    top: 25vw;
+}
+.title2{
+    font-family: futura_book;
+    color: white;
+    font-size:1.5vw;
+    padding-left: 13%;
+    top: 38vw;
+}
+.buttonIcon{
+    background: white;
+    border: none;
+    padding-top: 7px;
+    font-size: 15px;
+    color:#36ba94; 
+}
+.button2{
+    position: absolute;
+    font-family: futura_bold;
+    color: white;
+    font-size: 1.5vw;
+    border-radius: 40px;
+    margin-left: 17%;
+    padding: 1.2vw 1.5vh;
+    border: none;
+    top: 44vw;
+    background-color: #36ba94;
+}
+.icon{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4vw;
+    padding-left: 8%;
+    color: #36ba94;
+    top: 38vw;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+.line-header {
+    position: absolute;
+    border-top: 0.2rem solid #36ba94;
+    height: 0.2rem;
+    max-width: 20rem;
+    padding: 0;
+    margin: 0 auto 0 0;
+    top: 44vw;
+  }
+  /* sección dos*/
+
+
+.card-text{
+    font-family: futura_light;
+    font-size: 19px !important;
+}
+
+.card{
+    
+    border-color: #36ba94 !important;
+    border-width: 5px !important;
+}
+.caja{
+
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+
+.subtitle1{
+    font-family: futura_book;
+    color:white;
+    font-size:15px;
+    margin-top: 20px;
+}
+.subtitle2{
+    font-family: futura_bold;
+    color:white;
+    font-size:20px;
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.imageBack1{
+    background: #488b97 url('../images/Gradiente\ 2.png') ;  
+}
+.imageBack2{
+    background: #488b97 url('../images/Gradiente\ 1.png') no-repeat center center;  
+}

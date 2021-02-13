@@ -1,0 +1,21 @@
+
+@font-face{
+    font-family: futura_bold;
+    font-style: normal;
+    font-weight: normal;
+    src: url(FuturaLT-Bold.ttf);
+}
+@font-face{
+    font-family: futura_book;
+    font-style: normal;
+    font-weight: normal;
+    src: url(FuturaLT-Book.ttf);
+}
+@font-face{
+    font-family: futura_light;
+    font-style: normal;
+    font-weight: normal;
+    src: url(FuturaLT-Light.ttf);
+}
+
+
