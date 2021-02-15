@@ -41,8 +41,22 @@ h1{
     padding-right: 10%;
     background: url(../images/Inventario/Cuadricula.png);
 }
+.h1-title2{
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    font-family: futura_bold;
+
+}
 .card-body{
     text-align: center;
-    border: black solid 3px;
-    border-top: black solid 6px;
+    border: 0.15rem solid #545454;
+    border-top: 0.4rem solid #545454;
+    background-color: white;
+    height: 8rem;
+    width: 100%;
+    box-shadow: 0px 1px 5px;
+    padding: 0.5rem;
+    text-align: center;
 }
