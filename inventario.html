@@ -92,10 +92,15 @@
 					prevención de enefermedades o rehabilitación después de una enfermedad o lesión.
 				</P>
 			</div>
-        <div class="row">
+		</div>
+        <div class="row" id = "Carrusel_med">
+
+			<!--
             <div class="col-3">
                 <div class="card" style="width: 15rem;">
-                    <img src="images/Inventario/Médico/Guantes 1.PNG" class="card-img-top" alt="...">
+					<a href="#" data-toggle="modal" data-target="#exampleModal">
+                    <img src="images/Inventario/Médico/Guantes 1.PNG" class="card-img-top" style="height: 15rem" alt="...">
+					</a>
                     <div class="card-body">
                       <h5 class="card-title">Guantes de nitrilo</h5>
                       <p class="card-text">Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.</p>    
@@ -104,7 +109,7 @@
             </div>
             <div class="col-3">
                 <div class="card" style="width: 15rem;">
-                    <img src="images/Inventario/Médico/Guantes 2.PNG" class="card-img-top" alt="...">
+                    <img src="images/Inventario/Médico/Guantes 2.PNG" class="card-img-top" style="height: 15rem" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Guante Sol-vex</h5>
                       <p class="card-text">Protección contra químicos y grasas de uso pesado.
@@ -114,7 +119,7 @@
             </div>
             <div class="col-3">
                 <div class="card" style="width: 15rem;">
-                    <img src="images/Inventario/Médico/Cubre zapato.PNG" class="card-img-top" alt="...">
+                    <img src="images/Inventario/Médico/Cubre zapato.PNG" class="card-img-top" style="height: 15rem" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Cubre Zapato</h5>
                       <p class="card-text">Cubre zapatos de polipropileno laminado ultraadherente.</p>
@@ -123,15 +128,59 @@
             </div>
             <div class="col-3">
                 <div class="card" style="width: 15rem;">
-                    <img src="images/Inventario/Médico/Cubreboca.JPEG" class="card-img-top" alt="...">
+                    <img src="images/Inventario/Médico/Cubreboca.JPEG" class="card-img-top" style="height: 15rem" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Guante Ansell</h5>
                       <p class="card-text">Bajo en pelusa. Para inspeccionar y empacar. Forro tejido de nylon.</p>
                     </div>
                   </div>
             </div>
-        </div>        
+
+			 Modal 
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+					<img src="images/Inventario/Médico/Guantes 1.PNG" class="img-fluid rounded"> </img>
+				</div>
+			</div> -->
+
+		</div>  
+
+			<script>
+				var images_inv_med = ["Guantes 1","Guantes 2","Cubre zapato","Cubreboca"];
+				var Carrusel_med = document.getElementById('Carrusel_med');
+				for(image of images_inv_med){
+					Carrusel_med.innerHTML += `
+						<div class="col-3" data-toggle="modal" data-target="#id${image}">
+                			<div class="card" style="width: 15rem" >
+                    			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 15rem" >
+                    			<div class="card-body">
+                      				<h5 class="card-title">Guantes de nitrilo</h5>
+                      				<p class="card-text">Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.</p>    
+                    			</div>
+                  			</div>
+            			</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${image}" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+				  			</button>
+
+							<div class="modal-dialog ">
+								<img src="images/Inventario/Médico/${image}.png" class="img-fluid rounded">
+							</div>
+						</div>
+					`
+				}
+			</script>      
     </div>
+
+	
 	<!--Segunda sección-->
 	<!--<div class="imageBack1">
 		<div class="container-fluid fixed-center">
