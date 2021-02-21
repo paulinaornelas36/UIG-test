@@ -93,6 +93,15 @@
 				</P>
 			</div>
 		</div>
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
         <div class="row" id = "Carrusel_med">
 
 			<!--
@@ -148,17 +157,26 @@
 
 		</div>  
 
+		
+
 			<script>
-				var images_inv_med = ["Guantes 1","Guantes 2","Cubre zapato","Cubreboca"];
+				var images_inv_med = ["Guantes1","Guantes2","Cubrezapato","Cubreboca"];
+				var images_card_title = ["Guantes de Nitrilo", "Guantes Sol-vex", "Cubre Zapato", "Cubrebocas KN95"];
+				var images_card_text = [
+					"Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.",
+					"Protección contra químicos y grasas de uso pesado. Resistente a perforaciones.",
+					"Cubre zapatos de polipropileno laminado ultraadherente.",
+					"Diseñadas para filtrar las partículas, aerosoles líquidos y patógenos presentes"]
 				var Carrusel_med = document.getElementById('Carrusel_med');
+				var i = 0
 				for(image of images_inv_med){
 					Carrusel_med.innerHTML += `
 						<div class="col-3" data-toggle="modal" data-target="#id${image}">
                 			<div class="card" style="width: 15rem" >
                     			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 15rem" >
                     			<div class="card-body">
-                      				<h5 class="card-title">Guantes de nitrilo</h5>
-                      				<p class="card-text">Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.</p>    
+                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-text">${images_card_text[i]}</p>    
                     			</div>
                   			</div>
             			</div>
@@ -176,8 +194,14 @@
 							</div>
 						</div>
 					`
+					i += 1
 				}
-			</script>      
+			</script>  
+			
+			</div>
+		</div>
+		
+			</div>
     </div>
 
 	
