@@ -81,7 +81,7 @@
             </div>
         </div>
 	</header>
-    <div class="seccion2 container-fluid">
+    <div class="seccion2 container-fluid justify-content-center">
 		<div class="row">
 			<div class="col-12 h1-title2">
 				<h1>
@@ -100,62 +100,24 @@
 			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 			  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-        <div class="row" id = "Carrusel_med">
-
-			<!--
-            <div class="col-3">
-                <div class="card" style="width: 15rem;">
-					<a href="#" data-toggle="modal" data-target="#exampleModal">
-                    <img src="images/Inventario/Médico/Guantes 1.PNG" class="card-img-top" style="height: 15rem" alt="...">
-					</a>
-                    <div class="card-body">
-                      <h5 class="card-title">Guantes de nitrilo</h5>
-                      <p class="card-text">Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.</p>    
-                    </div>
-                  </div>
-            </div>
-            <div class="col-3">
-                <div class="card" style="width: 15rem;">
-                    <img src="images/Inventario/Médico/Guantes 2.PNG" class="card-img-top" style="height: 15rem" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Guante Sol-vex</h5>
-                      <p class="card-text">Protección contra químicos y grasas de uso pesado.
-						Resistente a perforaciones.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-3">
-                <div class="card" style="width: 15rem;">
-                    <img src="images/Inventario/Médico/Cubre zapato.PNG" class="card-img-top" style="height: 15rem" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Cubre Zapato</h5>
-                      <p class="card-text">Cubre zapatos de polipropileno laminado ultraadherente.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-3">
-                <div class="card" style="width: 15rem;">
-                    <img src="images/Inventario/Médico/Cubreboca.JPEG" class="card-img-top" style="height: 15rem" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Guante Ansell</h5>
-                      <p class="card-text">Bajo en pelusa. Para inspeccionar y empacar. Forro tejido de nylon.</p>
-                    </div>
-                  </div>
-            </div>
-
-			 Modal 
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				  </button>
-				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-					<img src="images/Inventario/Médico/Guantes 1.PNG" class="img-fluid rounded"> </img>
-				</div>
-			</div> -->
-
-		</div>  
+			<div class="carousel-inner justify-content-center">
+			  <div class="carousel-item active">
+				  <div class="row justify-content-center" id="Carrusel_med"></div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="row" id="Carrusel_med2"></div>
+			  </div>
+			  <div class="carousel-item">
+				<div class="row" id="Carrusel_med3"></div>
+			  </div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="margin-left: -10%;">
+			  <img src="images/prev.jpg" width="50%">
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="margin-right: -10%;">
+				<img src="images/next.jpeg" width="50%">
+			</a>
+		  </div>
 
 		
 
@@ -171,8 +133,80 @@
 				var i = 0
 				for(image of images_inv_med){
 					Carrusel_med.innerHTML += `
+						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+                			<div class="card mx-auto" style="width: 15rem" >
+                    			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 15rem" >
+                    			<div class="card-body">
+                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-text">${images_card_text[i]}</p>    
+                    			</div>
+                  			</div>
+            			</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${image}" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+				  			</button>
+
+							<div class="modal-dialog ">
+								<img src="images/Inventario/Médico/${image}.png" class="img-fluid rounded">
+							</div>
+						</div>
+					`
+					i += 1
+				}
+				var images_inv_med = ["Guantes1","Guantes2","Cubrezapato","Cubreboca"];
+				var images_card_title = ["Guantes de Nitrilo", "Guantes Sol-vex", "Cubre Zapato", "Cubrebocas KN95"];
+				var images_card_text = [
+					"Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.",
+					"Protección contra químicos y grasas de uso pesado. Resistente a perforaciones.",
+					"Cubre zapatos de polipropileno laminado ultraadherente.",
+					"Diseñadas para filtrar las partículas, aerosoles líquidos y patógenos presentes"]
+				var Carrusel_med = document.getElementById('Carrusel_med2');
+				var i = 0
+				for(image of images_inv_med){
+					Carrusel_med.innerHTML += `
 						<div class="col-3" data-toggle="modal" data-target="#id${image}">
-                			<div class="card" style="width: 15rem" >
+                			<div class="card mx-auto" style="width: 15rem" >
+                    			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 15rem" >
+                    			<div class="card-body">
+                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-text">${images_card_text[i]}</p>    
+                    			</div>
+                  			</div>
+            			</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${image}" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+				  			</button>
+
+							<div class="modal-dialog ">
+								<img src="images/Inventario/Médico/${image}.png" class="img-fluid rounded">
+							</div>
+						</div>
+					`
+					i += 1
+				}
+				var images_inv_med = ["Guantes1","Guantes2","Cubrezapato","Cubreboca"];
+				var images_card_title = ["Guantes de Nitrilo", "Guantes Sol-vex", "Cubre Zapato", "Cubrebocas KN95"];
+				var images_card_text = [
+					"Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.",
+					"Protección contra químicos y grasas de uso pesado. Resistente a perforaciones.",
+					"Cubre zapatos de polipropileno laminado ultraadherente.",
+					"Diseñadas para filtrar las partículas, aerosoles líquidos y patógenos presentes"]
+				var Carrusel_med = document.getElementById('Carrusel_med3');
+				var i = 0
+				for(image of images_inv_med){
+					Carrusel_med.innerHTML += `
+						<div class="col-3" data-toggle="modal" data-target="#id${image}">
+                			<div class="card mx-auto" style="width: 15rem" >
                     			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 15rem" >
                     			<div class="card-body">
                       				<h5 class="card-title">${images_card_title[i]}</h5>
