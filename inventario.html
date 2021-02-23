@@ -8,8 +8,8 @@
 	<link rel="icon" href="images/Logotipo.png">
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.min.css">	
-    <link rel="stylesheet" href="css/inventario.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/inventario.css">
 	<link rel="stylesheet" href="fonts/fonts.css" type="text/css" charset="utf-8" />
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap" rel="stylesheet"
 		type='text/css'>
@@ -73,22 +73,24 @@
 				</nav>
 			</div>
 		</div>
-        <div class="inv-principal">
-            <div>
-                <h1 class="h1 title fw-bolder display-3">
-                    INVENTARIO
-                </h1>
-            </div>
-        </div>
+		<div class="inv-principal">
+			<div>
+				<h1 class="h1 title fw-bolder display-3">
+					INVENTARIO
+				</h1>
+			</div>
+		</div>
 	</header>
-    <div class="seccion2 container-fluid justify-content-center">
-		<div class="row">
+	<div class="seccion2 container-fluid justify-content-center">
+
+		<!--Seccion 2: Medico-->
+		<div class="row mt-5">
 			<div class="col-12 h1-title2">
 				<h1>
 					MÉDICO
 				</h1>
-				<P class="list-unstyled">
-					Equipamiento médico para fines específicos de diagnóstico, cuidado, limpieza y 
+				<P class="text-body">
+					Equipamiento médico para fines específicos de diagnóstico, cuidado, limpieza y
 					prevención de enefermedades o rehabilitación después de una enfermedad o lesión.
 				</P>
 			</div>
@@ -96,46 +98,48 @@
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
-			  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 			</ol>
 			<div class="carousel-inner justify-content-center">
-			  <div class="carousel-item active">
-				  <div class="row justify-content-center" id="Carrusel_med"></div>
-			  </div>
-			  <div class="carousel-item">
-				<div class="row" id="Carrusel_med2"></div>
-			  </div>
-			  <div class="carousel-item">
-				<div class="row" id="Carrusel_med3"></div>
-			  </div>
+				<div class="carousel-item active">
+					<div class="row justify-content-center" id="Carrusel_med"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="row" id="Carrusel_med2"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="row" id="Carrusel_med3"></div>
+				</div>
 			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="margin-left: -10%;">
-			  <img src="images/prev.jpg" width="50%">
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"
+				style="margin-left: -12%;">
+				<img src="images/Prev.png" width="60%">
 			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="margin-right: -10%;">
-				<img src="images/next.jpeg" width="50%">
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"
+				style="margin-right: -12%;">
+				<img src="images/Next.png" width="60%">
 			</a>
-		  </div>
+		</div>
 
-		
 
-			<script>
-				var images_inv_med = ["Guantes1","Guantes2","Cubrezapato","Cubreboca"];
-				var images_card_title = ["Guantes de Nitrilo", "Guantes Sol-vex", "Cubre Zapato", "Cubrebocas KN95"];
-				var images_card_text = [
-					"Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.",
-					"Protección contra químicos y grasas de uso pesado. Resistente a perforaciones.",
-					"Cubre zapatos de polipropileno laminado ultraadherente.",
-					"Diseñadas para filtrar las partículas, aerosoles líquidos y patógenos presentes"]
-				var Carrusel_med = document.getElementById('Carrusel_med');
-				var i = 0
-				for(image of images_inv_med){
-					Carrusel_med.innerHTML += `
+
+		<script>
+			var images_inv_med = ["Guantes1", "Guantes2", "Cubrezapato", "Cubreboca"];
+			var images_card_title = ["Guantes de Nitrilo", "Guantes Sol-vex", "Cubre Zapato", "Cubrebocas KN95"];
+			var images_card_text = [
+				"Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.",
+				"Protección contra químicos y grasas de uso pesado. Resistente a perforaciones.",
+				"Cubre zapatos de polipropileno laminado ultraadherente.",
+				"Diseñadas para filtrar las partículas, aerosoles líquidos y patógenos presentes"]
+			var Carrusel_med = document.getElementById('Carrusel_med');
+			var i = 0
+			for (image of images_inv_med) {
+				Carrusel_med.innerHTML += `
 						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
-                			<div class="card mx-auto" style="width: 15rem" >
-                    			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 15rem" >
+                			<div class="card mx-auto" style="width: 14rem" >
+                    			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
                       				<h5 class="card-title">${images_card_title[i]}</h5>
                       				<p class="card-text">${images_card_text[i]}</p>    
@@ -156,22 +160,22 @@
 							</div>
 						</div>
 					`
-					i += 1
-				}
-				var images_inv_med = ["Guantes1","Guantes2","Cubrezapato","Cubreboca"];
-				var images_card_title = ["Guantes de Nitrilo", "Guantes Sol-vex", "Cubre Zapato", "Cubrebocas KN95"];
-				var images_card_text = [
-					"Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.",
-					"Protección contra químicos y grasas de uso pesado. Resistente a perforaciones.",
-					"Cubre zapatos de polipropileno laminado ultraadherente.",
-					"Diseñadas para filtrar las partículas, aerosoles líquidos y patógenos presentes"]
-				var Carrusel_med = document.getElementById('Carrusel_med2');
-				var i = 0
-				for(image of images_inv_med){
-					Carrusel_med.innerHTML += `
+				i += 1
+			}
+			var images_inv_med = ["Guantes1", "Guantes2", "Cubrezapato", "Cubreboca"];
+			var images_card_title = ["Guantes de Nitrilo", "Guantes Sol-vex", "Cubre Zapato", "Cubrebocas KN95"];
+			var images_card_text = [
+				"Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.",
+				"Protección contra químicos y grasas de uso pesado. Resistente a perforaciones.",
+				"Cubre zapatos de polipropileno laminado ultraadherente.",
+				"Diseñadas para filtrar las partículas, aerosoles líquidos y patógenos presentes"]
+			var Carrusel_med = document.getElementById('Carrusel_med2');
+			var i = 0
+			for (image of images_inv_med) {
+				Carrusel_med.innerHTML += `
 						<div class="col-3" data-toggle="modal" data-target="#id${image}">
-                			<div class="card mx-auto" style="width: 15rem" >
-                    			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 15rem" >
+                			<div class="card mx-auto" style="width: 14rem" >
+                    			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
                       				<h5 class="card-title">${images_card_title[i]}</h5>
                       				<p class="card-text">${images_card_text[i]}</p>    
@@ -192,24 +196,24 @@
 							</div>
 						</div>
 					`
-					i += 1
-				}
-				var images_inv_med = ["Guantes1","Guantes2","Cubrezapato","Cubreboca"];
-				var images_card_title = ["Guantes de Nitrilo", "Guantes Sol-vex", "Cubre Zapato", "Cubrebocas KN95"];
-				var images_card_text = [
-					"Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.",
-					"Protección contra químicos y grasas de uso pesado. Resistente a perforaciones.",
-					"Cubre zapatos de polipropileno laminado ultraadherente.",
-					"Diseñadas para filtrar las partículas, aerosoles líquidos y patógenos presentes"]
-				var Carrusel_med = document.getElementById('Carrusel_med3');
-				var i = 0
-				for(image of images_inv_med){
-					Carrusel_med.innerHTML += `
+				i += 1
+			}
+			var images_inv_med = ["Guantes1", "Guantes2", "Cubrezapato", "Cubreboca"];
+			var images_card_title = ["Guantes de Nitrilo", "Guantes Sol-vex", "Cubre Zapato", "Cubrebocas KN95"];
+			var images_card_text = [
+				"Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.",
+				"Protección contra químicos y grasas de uso pesado. Resistente a perforaciones.",
+				"Cubre zapatos de polipropileno laminado ultraadherente.",
+				"Diseñadas para filtrar las partículas, aerosoles líquidos y patógenos presentes"]
+			var Carrusel_med = document.getElementById('Carrusel_med3');
+			var i = 0
+			for (image of images_inv_med) {
+				Carrusel_med.innerHTML += `
 						<div class="col-3" data-toggle="modal" data-target="#id${image}">
-                			<div class="card mx-auto" style="width: 15rem" >
-                    			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 15rem" >
+                			<div class="card mx-auto" style="width: 14rem" >
+                    			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
-                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-title">${images_card_title[i]}</p>
                       				<p class="card-text">${images_card_text[i]}</p>    
                     			</div>
                   			</div>
@@ -228,260 +232,390 @@
 							</div>
 						</div>
 					`
-					i += 1
-				}
-			</script>  
-			
+				i += 1
+			}
+		</script>
+		<div class="row mt-3"></div>
+		<div class="linea mt-5"> </div>
+
+		<!--Seccion 2: industrial-->
+		<div class="row mt-5">
+			<div class="col-12 h1-title2">
+				<h1>
+					INDUSTRIAL
+				</h1>
+				<P class="text-body">
+					Catálogo de equipamiento industrial de materiales, suministros o aparatos necesarios para la creación de un
+					sistema hombre-máquina eficaz.
+				</P>
 			</div>
 		</div>
-		
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner justify-content-center">
+				<div class="carousel-item active">
+					<div class="row justify-content-center" id="Carrusel_indust"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="row" id="Carrusel_indust2"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="row" id="Carrusel_indust3"></div>
+				</div>
 			</div>
-    </div>
-
-	
-	<!--Segunda sección-->
-	<!--<div class="imageBack1">
-		<div class="container-fluid fixed-center">
-			<div class="row justify-content-center">
-				<div class=" caja col-xs-12 col-md-6 col-lg-3">
-					<div class="card">
-						<img class="card-img-top imgFrente" src="images/Imagen 1.PNG">
-						<div class="card-body">
-							<p class="card-text">Compromiso, Pasión, <br>Trabajo en equipo, Sentido de urgencia con el cliente.</p>
-						</div>
-					</div>
-				</div>
-				<div class=" caja col-xs-12 col-md-6 col-lg-3 ">
-					<div class="card">
-						<img class="card-img-top imgFrente" src="images/Imagen 2.PNG">
-						<div class="card-body">
-							<p class="card-text">Profesionalidad, <br>Respeto, Condifencialidad y Rentabilidad.</p>
-						</div>
-					</div>
-				</div>
-				<div class="caja col-xs-12 col-md-6 col-lg-3">
-					<div class="card">
-						<img class="card-img-top imgFrente" src="images/Imagen 3.PNG">
-						<div class="card-body">
-							<p class="card-text">Proporcionar el mejor portafolio de insumos médicos y facilitar el proceso de compra.</p>
-						</div>
-					</div>
-				</div>
-				<div class=" caja col-xs-12 col-md-6 col-lg-3">
-					<div class="card">
-						<img class="card-img-top imgFrente" src="images/Imagen 4.PNG">
-						<div class="card-body">
-							<p class="card-text">Ser el mejor y más confiable enlance comercial entre nuestros clientes y el fabricante.</p>
-						</div>
-					</div>
-				</div>
-
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"
+				style="margin-left: -12%;">
+				<img src="images/Prev.png" width="60%">
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"
+				style="margin-right: -12%;">
+				<img src="images/Next.png" width="60%">
+			</a>
 		</div>
+
+
+
+		<script>
+			var images_inv_indust = ["Guantes3", "Cascos", "Chaleco1", "Chaleco2"];
+			var images_card_title = ["Guantes Ansell", "Casco de Seguridad", "Chaleco de Rescate", "Chaleco reflectante"];
+			var images_card_text = [
+				"Bajo en pelusa. Para inspeccionar y empacar. Forro tejido de nylon.",
+				"Casco para proteger la cabeza de quien lo usa de peligros y golpes.",
+				"Chaleco de seguridad para rescatistas e integrantes de salvamento.",
+				"Ayuda a mejorar la seguridad del usuario por una fuente de luz."];
+			var Carrusel_indust = document.getElementById('Carrusel_indust');
+			var i = 0
+			for (image of images_inv_indust) {
+				Carrusel_indust.innerHTML += `
+						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+                			<div class="card mx-auto" style="width: 14rem" >
+                    			<img src="images/Inventario/Industrial/${image}.png" class="card-img-top" style="height: 13rem" >
+                    			<div class="card-body">
+                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-text">${images_card_text[i]}</p>    
+                    			</div>
+                  			</div>
+            			</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${image}" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+				  			</button>
+
+							<div class="modal-dialog ">
+								<img src="images/Inventario/Industrial/${image}.png" class="img-fluid rounded">
+							</div>
+						</div>
+					`
+				i += 1
+			}
+			var images_inv_indust = ["Guantes3", "Cascos", "Chaleco1", "Chaleco2"];
+			var images_card_title = ["Guantes Ansell", "Casco de Seguridad", "Chaleco de Rescate", "Chaleco reflectante"];
+			var images_card_text = [
+				"Bajo en pelusa. Para inspeccionar y empacar. Forro tejido de nylon.",
+				"Casco para proteger la cabeza de quien lo usa de peligros y golpes.",
+				"Chaleco de seguridad para rescatistas e integrantes de salvamento.",
+				"Ayuda a mejorar la seguridad del usuario por una fuente de luz."];
+			var Carrusel_indust = document.getElementById('Carrusel_indust2');
+			var i = 0
+			for (image of images_inv_indust) {
+				Carrusel_indust.innerHTML += `
+						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+                			<div class="card mx-auto" style="width: 14rem" >
+                    			<img src="images/Inventario/Industrial/${image}.png" class="card-img-top" style="height: 13rem" >
+                    			<div class="card-body">
+                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-text">${images_card_text[i]}</p>    
+                    			</div>
+                  			</div>
+            			</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${image}" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+				  			</button>
+
+							<div class="modal-dialog ">
+								<img src="images/Inventario/Industrial/${image}.png" class="img-fluid rounded">
+							</div>
+						</div>
+					`
+				i += 1
+			}
+			var images_inv_indust = ["Guantes3", "Cascos", "Chaleco1", "Chaleco2"];
+			var images_card_title = ["Guantes Ansell", "Casco de Seguridad", "Chaleco de Rescate", "Chaleco reflectante"];
+			var images_card_text = [
+				"Bajo en pelusa. Para inspeccionar y empacar. Forro tejido de nylon.",
+				"Casco para proteger la cabeza de quien lo usa de peligros y golpes.",
+				"Chaleco de seguridad para rescatistas e integrantes de salvamento.",
+				"Ayuda a mejorar la seguridad del usuario por una fuente de luz."];
+			var Carrusel_indust = document.getElementById('Carrusel_indust3');
+			var i = 0
+			for (image of images_inv_indust) {
+				Carrusel_indust.innerHTML += `
+						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+                			<div class="card mx-auto" style="width: 14rem" >
+                    			<img src="images/Inventario/Industrial/${image}.png" class="card-img-top" style="height: 13rem" >
+                    			<div class="card-body">
+                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-text">${images_card_text[i]}</p>    
+                    			</div>
+                  			</div>
+            			</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${image}" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+				  			</button>
+
+							<div class="modal-dialog ">
+								<img src="images/Inventario/Industrial/${image}.png" class="img-fluid rounded">
+							</div>
+						</div>
+					`
+				i += 1
+			}
+		</script>
+		<div class="row mt-3"></div>
+		<div class="linea mt-5"> </div>
+
+		<!--Seccion 2: electrico-->
+		<div class="row mt-5">
+			<div class="col-12 h1-title2">
+				<h1>
+					ELÉCTRICO
+				</h1>
+				<P class="text-body">
+					Equipamiento eléctrico-industrial para la operación con cableado y suministro eléctrico. Suministros necesarios
+					para la creación de un sistema hombre-operación.
+				</P>
+			</div>
+		</div>
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner justify-content-center">
+				<div class="carousel-item active">
+					<div class="row justify-content-center" id="Carrusel_electric"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="row" id="Carrusel_electric2"></div>
+				</div>
+				<div class="carousel-item">
+					<div class="row" id="Carrusel_electric3"></div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"
+				style="margin-left: -12%;">
+				<img src="images/Prev.png" width="60%">
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"
+				style="margin-right: -12%;">
+				<img src="images/Next.png" width="60%">
+			</a>
+		</div>
+
+
+
+		<script>
+			var images_inv_electric = ["Guantes4", "Tape", "Arneses", "Faja"];
+			var images_card_title = ["Guante de Carnaza", "Cinta Aislante", "Arnés", "Faja Arnés"];
+			var images_card_text = [
+				"Resistentes a la abrasión y a las chispas de soldadura. Protegen las manos.",
+				"Cinta adhesiva de presión usada para aislar empalmes de hilos y cables eléctricos.",
+				"Principal equipo de protección individual (EPI) para detención de caídas.",
+				"Para la protección y seguridad de los trabajadores."];
+			var Carrusel_electric = document.getElementById('Carrusel_electric');
+			var i = 0
+			for (image of images_inv_electric) {
+				Carrusel_electric.innerHTML += `
+						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+                			<div class="card mx-auto" style="width: 14rem" >
+                    			<img src="images/Inventario/Eléctrico/${image}.jpg" class="card-img-top" style="height: 13rem" >
+                    			<div class="card-body">
+                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-text">${images_card_text[i]}</p>    
+                    			</div>
+                  			</div>
+            			</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${image}" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+				  			</button>
+
+							<div class="modal-dialog ">
+								<img src="images/Inventario/Eléctrico/${image}.jpg" class="img-fluid rounded">
+							</div>
+						</div>
+					`
+				i += 1
+			}
+			var images_inv_electric = ["Guantes4", "Tape", "Arneses", "Faja"];
+			var images_card_title = ["Guante de Carnaza", "Cinta Aislante", "Arnés", "Faja Arnés"];
+			var images_card_text = [
+				"Resistentes a la abrasión y a las chispas de soldadura. Protegen las manos.",
+				"Cinta adhesiva de presión usada para aislar empalmes de hilos y cables eléctricos.",
+				"Principal equipo de protección individual (EPI) para detención de caídas.",
+				"Para la protección y seguridad de los trabajadores."];
+			var Carrusel_electric = document.getElementById('Carrusel_electric2');
+			var i = 0
+			for (image of images_inv_electric) {
+				Carrusel_electric.innerHTML += `
+						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+                			<div class="card mx-auto" style="width: 14rem" >
+                    			<img src="images/Inventario/Eléctrico/${image}.jpg" class="card-img-top" style="height: 13rem" >
+                    			<div class="card-body">
+                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-text">${images_card_text[i]}</p>    
+                    			</div>
+                  			</div>
+            			</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${image}" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+				  			</button>
+
+							<div class="modal-dialog ">
+								<img src="images/Inventario/Eléctrico/${image}.jpg" class="img-fluid rounded">
+							</div>
+						</div>
+					`
+				i += 1
+			}
+			var images_inv_electric = ["Guantes4", "Tape", "Arneses", "Faja"];
+			var images_card_title = ["Guante de Carnaza", "Cinta Aislante", "Arnés", "Faja Arnés"];
+			var images_card_text = [
+				"Resistentes a la abrasión y a las chispas de soldadura. Protegen las manos.",
+				"Cinta adhesiva de presión usada para aislar empalmes de hilos y cables eléctricos.",
+				"Principal equipo de protección individual (EPI) para detención de caídas.",
+				"Para la protección y seguridad de los trabajadores."];
+			var Carrusel_electric = document.getElementById('Carrusel_electric3');
+			var i = 0
+			for (image of images_inv_electric) {
+				Carrusel_electric.innerHTML += `
+						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+                			<div class="card mx-auto" style="width: 14rem" >
+                    			<img src="images/Inventario/Eléctrico/${image}.jpg" class="card-img-top" style="height: 13rem" >
+                    			<div class="card-body">
+                      				<h5 class="card-title">${images_card_title[i]}</h5>
+                      				<p class="card-text">${images_card_text[i]}</p>    
+                    			</div>
+                  			</div>
+            			</div>
+
+						<!-- Modal -->
+						<div class="modal fade" id="id${image}" tabindex="-1"
+						aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+							<button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+				  			</button>
+
+							<div class="modal-dialog ">
+								<img src="images/Inventario/Eléctrico/${image}.jpg" class="img-fluid rounded">
+							</div>
+						</div>
+					`
+				i += 1
+			}
+		</script>
+
 	</div>
-	
-		<div class="imageBack2">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<p class="subtitle1">La mejor calidad y el mejor servicio</p>
-					</div>
-					<div class="col-12">
-						<p class="subtitle2">Catálogo de productos / Venta consultiva / Flexibilidad</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<main class="catalog">
-			<div class="catalog bg">
-				<div class="catalog grid">
-					<section class="product-catalog">
-						<img src="images/Imagen 5.PNG" alt="guantes de nitrilo">
-						<div class="product-catalog Content">
-							<h2>Guantes de nitrilo</h2>
-							<p>Guante de nitrilo para todas las tallas XS, S, M, L o XL en stock.</p>
-						</div>
-					</section>
 
-					<section class="product-catalog">
-						<img src="images/Imagen 6.PNG" alt="guante sol-vex">
-						<div class="product-catalog Content">
-							<h2>Guante Sol-vex</h2>
-							<p>Protección contra químicos y grasas de uso pesado.
-								Resistente a perforaciones.</p>
+	<!-- footer -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<form action="#" method="get" class="wow fadeInUp" data-wow-delay="0.6s">
+						<h1 class="heading bold">¡TE AYUDAMOS!</h1>
+						<h3 class="heading bold">TENEMOS CONTENIDO DE VALOR PARA TI</h3>
+						<p>Registra tu correo para recibir informacion mas estretegica sobre la salud de las
+							industrias.
+						</p>
+						<div class="con">
+							<div><input type="text" class="form-control" placeholder="Deja tu correo aqui"></div>
+							<div><input type="submit" class="form-control2" value=">"></div>
 						</div>
-					</section>
-
-					<section class="product-catalog">
-						<img src="images/Imagen 7.PNG" alt="cubre zapato">
-						<div class="product-catalog Content">
-							<h2>Cubre Zapato</h2>
-							<p>Cubre zapatos de polipropileno laminado ultraadherente.</p>
-						</div>
-					</section>
-
-					<section class="product-catalog">
-						<img src="images/Imagen 8.PNG" alt="guante ansell">
-						<div class="product-catalog Content">
-							<h2>Guante Ansell</h2>
-							<p>Bajo en pelusa. Para inspeccionar y empacar. Forro tejido de nylon.</p>
-						</div>
-					</section>
-
-					<section class="product-catalog">
-						<img src="images/Imagen 9.PNG" alt="guante de nylon">
-						<div class="product-catalog Content">
-							<h2>Guante de Nylon</h2>
-							<p>Guante de nylon con recubrimiento de poliuretano en la palma.</p>
-						</div>
-					</section>
-
-					<section class="product-catalog">
-						<img src="images/Imagen 10.PNG" alt="tapon auditivo">
-						<div class="product-catalog Content">
-							<h2>Tapón Auditivo</h2>
-							<p>Tapones auditivos fabricados con silicona con cordón de nylon.</p>
-						</div>
-					</section>
-
-					<section class="product-catalog">
-						<img src="images/Imagen 11.PNG" alt="bata">
-						<div class="product-catalog Content">
-							<h2>Bata</h2>
-							<p>Bata de laboratorio de material microscópico. Esterilizada con óxido.</p>
-						</div>
-					</section>
-
-					<section class="product-catalog">
-						<img src="images/Imagen 12.PNG" alt="cofia">
-						<div class="product-catalog Content">
-							<h2>Cofia</h2>
-							<p>Capa de polipropileno con banda elástica para ajuste y sujeción. Elástico.</p>
-						</div>
-					</section>
-				</div>
-				<div>
-		</main>
-		<div class="test-info">
-			<div class="testimonios">
-				<h2> « Lo Que Dicen Nuestros Clientes « </h2>
-				<div class="linea"></div>
-				<div class="testimonio-cards">
-					<section class="testimonio-card">
-						<div class="testimonio-data">
-							<img src="images/Contacto 1.png" alt="Foto testimonio 1" class="testimonio-foto">
-							<h3>PAULA SALINAS</h3>
-							<img src="images/Firma 1.png" alt="Firma 1" class="testimonio-firma">
-						</div>
-						<p>Excelente atención de inmediato se dieron a la tarea de buscar
-							el producto que requería y me mandaron la cotización el mismo día. </p>
-					</section>
-
-					<section class="testimonio-card">
-						<div class="testimonio-data">
-							<img src="images/Contacto 2.png" alt="Foto testimonio 2" class="testimonio-foto">
-							<h3>ALBERTO CAZARES</h3>
-							<img src="images/Firma 2.png" alt="Firma 2" class="testimonio-firma">
-						</div>
-						<p>Muy buena empresa siempre me ayudan a resolver y atender los
-							requerimientos que me piden para abastecer las necesidades en el almacén.</p>
-					</section>
-				</div>
-			</div>
-			<section class="compania">
-				<h2>UIG <br> COMPANY</h2>
-				<div class="linea-blanca"></div>
-				<p>Entendemos lo importante que es el cuidado de la salud de los trabajadores
-					para las empresas. En UIG Company nos entusiasma ayudar.</p>
-				<a href="ejemplo.html" class="compania-boton">Más información</a>
-
-			</section>
-		</div>
-		<section id="map">
-			<div class="horario">
-				<h2 class="textmap">Horario de Atencion</h2>
-				<p class="map">
-					Lunes - Viernes 8:00am - 5:00pm
-				</p>
-				<div class="linea-blanca" id="lin"></div>
-				<p class="map">
-					Sabado - Domingo Cerrado
-				</p>
-				<div class="linea-blanca" id="lin"></div>
-
-			</div>
-			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.7702616957145!2d-106.35230394894978!3d31.667504546938073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d4c5dd9140b%3A0x12c978e23a7306cf!2sCalle%20Ram%C3%B3n%20Rayon%201520%2C%20C%20.%20R%C3%ADo%20Bravo%2C%2032550%20Cd%20Ju%C3%A1rez%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1612257938873!5m2!1ses-419!2smx"
-				width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-				tabindex="0"></iframe>
-		</section>-->
-		<!-- footer -->
-		<section id="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
-						<form action="#" method="get" class="wow fadeInUp" data-wow-delay="0.6s">
-							<h1 class="heading bold">¡TE AYUDAMOS!</h1>
-							<h3 class="heading bold">TENEMOS CONTENIDO DE VALOR PARA TI</h3>
-							<p>Registra tu correo para recibir informacion mas estretegica sobre la salud de las
-								industrias.
-							</p>
+						<div class=>
+							<p>BLOG</p>
+							<p>AVISO DE PRIVACIDAD</p>
 							<div class="con">
-								<div><input type="text" class="form-control" placeholder="Deja tu correo aqui"></div>
-								<div><input type="submit" class="form-control2" value=">"></div>
+								<p>SIGUENOS</p>
+								<img src="images/icons8-facebook-24.png" class="redes">
+								<img src="images/icons8-instagram-26.png" class="redes">
+								<img src="images/icons8-youtube-play-24.png" class="redes">
 							</div>
-							<div class=>
-								<p>BLOG</p>
-								<p>AVISO DE PRIVACIDAD</p>
-								<div class="con">
-									<p>SIGUENOS</p>
-									<img src="images/icons8-facebook-24.png" class="redes">
-									<img src="images/icons8-instagram-26.png" class="redes">
-									<img src="images/icons8-youtube-play-24.png" class="redes">
-								</div>
 
-							</div>
-						</form>
-					</div>
-					<div class="col-md-6 col-sm-12 contact-info">
-						<h2 class="heading bold">TODAS LAS RESPUESTAS ESTAN EN UN CLICK DE DISTANCIA</h2>
-						<div class="con">
-							<img src="images/icons8-whatsapp-64.png" class="redes">
-							<h2 class="heading bold">Whatsapp (:</h2>
 						</div>
-						<p>+52 656 111 1111</p>
-						<div class="linea-blanca"></div>
-						<div class="con">
-							<img src="images/icons8-telefono-sin-utilizar-100.png" class="redes">
-							<h2 class="heading bold">¿Quieres hablar? </h2>
-						</div>
-						<p>+52 656 111 1111</p>
-						<div class="linea-blanca"></div>
-						<div class="con">
-							<img src="images/icons8-correo-80.png" class="redes">
-							<h2 class="heading bold">¿Que tienes en mente?</h2>
-						</div>
-						<p>ejemplo@uifcompany.com</p>
-						<div class="linea-blanca"></div>
+					</form>
+				</div>
+				<div class="col-md-6 col-sm-12 contact-info">
+					<h2 class="heading bold">TODAS LAS RESPUESTAS ESTAN EN UN CLICK DE DISTANCIA</h2>
+					<div class="con">
+						<img src="images/icons8-whatsapp-64.png" class="redes">
+						<h2 class="heading bold">Whatsapp (:</h2>
 					</div>
-					<div class="scrollup">
-						<a href="#"><i class="fa fa-chevron-up"></i></a>
+					<p>+52 656 111 1111</p>
+					<div class="linea-blanca"></div>
+					<div class="con">
+						<img src="images/icons8-telefono-sin-utilizar-100.png" class="redes">
+						<h2 class="heading bold">¿Quieres hablar? </h2>
 					</div>
+					<p>+52 656 111 1111</p>
+					<div class="linea-blanca"></div>
+					<div class="con">
+						<img src="images/icons8-correo-80.png" class="redes">
+						<h2 class="heading bold">¿Que tienes en mente?</h2>
+					</div>
+					<p>ejemplo@uifcompany.com</p>
+					<div class="linea-blanca"></div>
+				</div>
+				<div class="scrollup">
+					<a href="#"><i class="fa fa-chevron-up"></i></a>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- footer section -->
-		<footer>
+	<!-- footer section -->
+	<footer>
 
-			<div class="footer">
+		<div class="footer">
 
-				<p class="footer-size">@ 2020 UIF Company S.A. de C.V. Todos los derechos reservados </p>
+			<p class="footer-size">@ 2020 UIF Company S.A. de C.V. Todos los derechos reservados </p>
 
 
-				<p class="footer-size2">Politica de cookies</p>
-			</div>
+			<p class="footer-size2">Politica de cookies</p>
+		</div>
 
-		</footer>
+	</footer>
 </body>
 
 </html>
