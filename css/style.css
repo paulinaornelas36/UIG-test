@@ -609,13 +609,6 @@ media quires for mobile
 }
 
 
-.h1{
-    position: absolute;
-}
-.h2{
-    position: absolute;
-}
-
 .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{
     background-color: #36ba94 !important;
 }
@@ -636,101 +629,643 @@ media quires for mobile
     font-size: 15px;
 }
 
-.title1{
-    font-family: futura_bold;
-    color:white;
-    font-size:3vw;
-    padding-left: 8%;
-    top: 25vw;
-}
-.title2{
-    font-family: futura_book;
-    color: white;
-    font-size:1.5vw;
-    padding-left: 13%;
-    top: 38vw;
-}
-.buttonIcon{
+.index-ButtonIcon{
     background: white;
     border: none;
     padding-top: 7px;
     font-size: 15px;
     color:#36ba94; 
 }
-.button2{
-    position: absolute;
+.index-Button2{
     font-family: futura_bold;
     color: white;
-    font-size: 1.5vw;
+    font-size: 25px;
     border-radius: 40px;
     margin-left: 17%;
-    padding: 1.2vw 1.5vh;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 5px 10px;
     border: none;
-    top: 44vw;
     background-color: #36ba94;
 }
 .icon{
-    position: absolute;
     background: none;
     border: none;
-    font-size: 4vw;
-    padding-left: 8%;
+    font-size: 50px;
     color: #36ba94;
-    top: 38vw;
+    margin-top: 15px;
 }
 
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: left;
-}
-.line-header {
-    position: absolute;
-    border-top: 0.2rem solid #36ba94;
-    height: 0.2rem;
-    max-width: 20rem;
+.line-contUs-header{
+    border-top: 5px solid #36BA94;
+    height: 2px;
+    max-width: 620px;
     padding: 0;
     margin: 0 auto 0 0;
-    top: 44vw;
-  }
-  /* sección dos*/
-
-
+}
 .card-text{
     font-family: futura_light;
-    font-size: 19px !important;
+    font-size: 16px !important;
 }
 
 .card{
-    
     border-color: #36ba94 !important;
     border-width: 5px !important;
 }
 .caja{
-
     margin-top:25px;
     margin-bottom:25px;
 }
 
-
-.subtitle1{
-    font-family: futura_book;
-    color:white;
-    font-size:15px;
-    margin-top: 20px;
-}
-.subtitle2{
+.index-Title1{
     font-family: futura_bold;
     color:white;
+    font-size:40px;
+    padding-top:150px;
+}
+.index-Title2{
+    font-family: futura_book;
+    color: white;
     font-size:20px;
-    padding: 0px;
-    margin-top: 0;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+.index-Subtitle1{
+    font-family: futura_book;
+    color:white;
+    font-size:17px;
+    margin-top: 20px;
+}
+.index-Subtitle2{
+    font-family: futura_bold;
+    color:white;
+    font-size:23px;
     margin-bottom: 20px;
 }
-
-.imageBack1{
+.card img
+{
+    height:250px;
+    width:100%;
+}
+#index-ImageBack1{
     background: #488b97 url('../images/Gradiente\ 2.png') ;  
 }
-.imageBack2{
+#index-ImageBack2{
     background: #488b97 url('../images/Gradiente\ 1.png') no-repeat center center;  
+}
+#index-Contact{
+    background: #3B3B3B url('../images/Top.png') no-repeat center center;
+    background-size: cover; 
+}
+
+/*Extra large deices (large desktop,1200px and up)*/
+@media (max-width:1200px){
+    .index-Title1{
+        font-size:40px;
+        padding-top:150px;
+    }
+    .index-Title2{
+        font-size:20px;
+        margin-top:15px;
+    }
+    .line-contUs-header{
+        border-top: 5px solid #36BA94;
+        height: 2px;
+        max-width: 620px;
+    }
+    .icon{
+        font-size: 50px;
+        margin-top: 15px;
+    }
+    .card-text{
+        font-size: 16px !important;
+    }
+    .card img
+    {
+        height:250px;
+        width:100%;
+    }
+}
+/*Large devices(desktops,992px and up)*/
+@media (max-width: 992px){
+    .index-Title1{
+        font-size:30px;
+        padding-top:150px;
+    }
+    .index-Title2{
+        font-size:15px;
+        margin-top:13px;
+    }
+    .line-contUs-header{
+        border-top: 5px solid #36BA94;
+        height: 2px;
+        max-width: 480px;
+    }
+    .icon{
+        font-size: 45px;
+        margin-top: 13px;
+    }
+    .card-text{
+        font-size: 16px !important;
+    }
+    .card img
+    {
+        height:250px;
+    }
+    .index-Button2{
+        font-size: 20px;
+        border-radius: 40px;
+        margin-left: 17%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        padding: 5px 10px;
+    }
+}
+/*Medium devices (tablets,768px and up)*/
+@media(max-width: 765px)
+{   
+    .index-Title1{
+        font-size:25px;
+        padding-top:130px;
+    }
+    .index-Title2{
+        font-size:13px;
+        margin-top:10px;
+    }
+    .line-contUs-header{
+        border-top: 5px solid #36BA94;
+        height: 2px;
+        max-width: 410px;
+    }
+    .icon{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    .card{
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+    .card-text{
+        font-size: 14px !important;
+    }
+    .card img
+    {
+        height:200px;
+    }
+    .index-Button2{
+        font-size: 17px;
+        border-radius: 40px;
+        margin-left: 17%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        padding: 5px 10px;
+    }
+    .index-Subtitle1{
+        font-size:15px;
+        margin-top: 20px;
+    }
+    .index-Subtitle2{
+        font-size:17px;
+        margin-bottom: 20px;
+    }
+}
+/*Small devices (lanscape phones, 576px and up)*/
+@media(max-width: 576px){
+    .index-Title1{
+        font-size:17px;
+        padding-top:130px;
+    }
+    .index-Title2{
+        font-size:10px;
+        margin-top:10px;
+    }
+    .line-contUs-header{
+        border-top: 5px solid #36BA94;
+        height: 2px;
+        max-width: 290px;
+    }
+    .icon{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .card{
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+    .index-Button2{
+        font-size: 15px;
+        border-radius: 40px;
+        margin-left: 17%;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        padding: 5px 10px;
+    }
+    .index-Subtitle1{
+        font-size:15px;
+        margin-top: 20px;
+    }
+    .index-Subtitle2{
+        font-size:17px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/*About Us*/
+#aboutUs-Header{
+    background: #3B3B3B url('../images/Industrial.png') no-repeat center center;
+    background-size: cover;
+}
+#aboutUs-GetPS{
+    background: #3B3B3B url('../images/Almacen.png') no-repeat center center;
+    background-size: cover; 
+}
+#aboutUs-Title{
+    font-family: futura_bold;
+    color: white;
+    font-size: 60px;
+    padding-top: 150px;
+    padding-bottom: 120px ;
+}
+#aboutUs-Title2{
+    font-family: futura_bold;
+    color: white;
+    font-size: 25px; 
+    padding-top: 50px;
+}
+.aboutUs-Subtitle{
+    font-family: futura_bold;
+    color: black;
+    font-size: 25px; 
+    margin-top: 20px;
+}
+.aboutUs-Text{
+    font-family: futura_book;
+    color: black;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#aboutUs-Text2{
+    font-family: futura_book;
+    color: white;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+.line-aUs-header{
+    border-top: 3px solid #36BA94;
+    height: 2px;
+    max-width: 580px;
+    padding: 0;
+    margin: 0 auto 0 0;
+}
+.line-aUs-Info{
+    border-top: 4px solid #36BA94;
+    height: 2px;
+    max-width: 60px;
+    padding: 0;
+    margin: 0 auto 0 0;
+    margin-top: 5px;
+}
+.line-aUs-GetPS{
+    border-top: 5px solid #36BA94;
+    height: 2px;
+    max-width: 60px;
+    margin: 0 auto 0 0;
+    align-items: center;
+}
+#image-aUs-Info{
+    margin-left: 70px;
+    margin-top: 30px;
+    height: 350px;
+}
+#image-aUs-Info2{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    height: 350px;
+}
+
+.borderLine-aUs{
+    border: .10px solid #36BA94;
+    margin: 50px;
+}
+.aboutUs-Button{
+    background-color: #36ba94;
+    font-family: futura_book;
+    font-size: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+}
+.aboutUs-IconButton{
+    background: none;
+    border: none;
+    font-size: auto;
+    color: white;
+    padding: 5px;
+}
+.aboutUs-ContainerM{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+/*Extra large deices (large desktop,1200px and up)*/
+@media (max-width:1200px){
+    #aboutUs-Title{
+        font-size: 60px;
+        padding-top: 150px;
+        padding-bottom: 120px ;
+    }
+    #aboutUs-Title2{
+        font-size: 25px; 
+        padding-top: 50px;
+    }
+    .aboutUs-Subtitle{
+        font-size: 25px; 
+        margin-top: 20px;
+    }
+    .aboutUs-Text{
+        font-size: 17px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    #aboutUs-Text2{
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 50px;
+    }
+    .line-aUs-header{
+        border-top: 3px solid #36BA94;
+        height: 2px;
+        max-width: 580px;
+    }
+    .line-aUs-Info{
+        border-top: 4px solid #36BA94;
+        height: 2px;
+        max-width: 60px;
+    }
+    .line-aUs-GetPS{
+        border-top: 5px solid #36BA94;
+        height: 2px;
+        max-width: 60px;
+    }
+    #image-aUs-Info{
+        margin-left: 70px;
+        margin-top: 30px;
+        height: 350px;
+    }
+    #image-aUs-Info2{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 70px;
+        height: 350px;
+    }
+    .borderLine-aUs{
+        border: .10px solid #36BA94;
+        margin: 50px;
+    }
+    .aboutUs-Button{
+        font-size: 15px;
+        padding: 5px;
+        padding-left: 10px;
+        color: white;
+        margin-bottom: 30px;
+        border: none;
+    }
+    .aboutUs-IconButton{
+        background: none;
+        border: none;
+        font-size: auto;
+        color: white;
+        padding: 5px;
+    }
+    .aboutUs-ContainerM{
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
+/*Large devices(desktops,992px and up)*/
+@media (max-width: 990px){
+    #aboutUs-Title{
+        font-size: 50px;
+        padding-top: 130px;
+        padding-bottom: 100px ;
+    }
+    #aboutUs-Title2{
+        font-size: 20px; 
+        padding-top: 40px;
+    }
+    .aboutUs-Subtitle{
+        font-size: 20px; 
+    }
+    .aboutUs-Text{
+        font-size: 15px;
+        padding-top: 12px;
+        padding-bottom: 30px;
+    }
+    #aboutUs-Text2{
+        font-size: 14px;
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+    .line-aUs-header{
+        border-top: 3px solid #36BA94;
+        height: 2px;
+        max-width: 485px;
+    }
+    .line-aUs-Info{
+        border-top: 4px solid #36BA94;
+        height: 2px;
+        max-width: 50px;
+    }
+    .line-aUs-GetPS{
+        border-top: 5px solid #36BA94;
+        height: 2px;
+        max-width: 60px;
+    }
+    #image-aUs-Info{
+        margin-left: 10px;
+        margin-top: 30px;
+        height: 320px;
+    }
+    #image-aUs-Info2{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 15px;
+        height: 320px;
+    }
+    
+    .borderLine-aUs{
+        border: .10px solid #36BA94;
+        margin: 50px;
+    }
+    .aboutUs-Button{
+        font-size: 13px;
+        padding: 3px;
+        padding-left: 10px;
+        color: white;
+        margin-bottom: 25px;
+        border: none;
+    }
+    .aboutUs-IconButton{
+        background: none;
+        border: none;
+        font-size: auto;
+        color: white;
+        padding: 5px;
+    }
+    .aboutUs-ContainerM{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+}
+/*Medium devices (tablets,768px and up)*/
+@media(max-width: 766px)
+{   
+    #aboutUs-Title{
+        font-size: 40px;
+        padding-top: 130px;
+        padding-bottom: 80px ;
+    }
+    .aboutUs-Subtitle{
+        font-size: 20px; 
+        margin-top: 20px;
+    }
+    .line-aUs-header{
+        border-top: 3px solid #36BA94;
+        height: 2px;
+        max-width: 390px;
+        padding: 0;
+        margin: 0 auto 0 0;
+    }
+    .line-aUs-Info{
+        border-top: 4px solid #36BA94;
+        height: 2px;
+        max-width: 50px;
+    }
+    .line-aUs-GetPS{
+        border-top: 5px solid #36BA94;
+        height: 2px;
+        max-width: 60px;
+    }
+    #image-aUs-Info{
+        margin-left: 10px;
+        margin-bottom: 20px;
+        height: 300px;
+    }
+    #image-aUs-Info2{
+        margin-top: 20px;
+        margin-left: 15px;
+        height: 300px;
+    }
+    
+    .borderLine-aUs{
+        border: .10px solid #36BA94;
+        margin: 50px;
+    }
+    .aboutUs-Button{
+        font-size: 13px;
+        padding: 3px;
+        padding-left: 10px;
+        color: white;
+        margin-bottom: 25px;
+        border: none;
+    }
+    .aboutUs-IconButton{
+        background: none;
+        border: none;
+        font-size: auto;
+        color: white;
+        padding: 5px;
+    }
+    .aboutUs-ContainerM{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .aboutUs-image{
+        text-align: center;
+    }
+}
+/*Small devices (lanscape phones, 576px and up)*/
+@media(max-width: 576px){
+    #aboutUs-Title{
+        font-size: 32px;
+        padding-top: 130px;
+        padding-bottom: 60px ;
+    }
+    #aboutUs-Title2{
+        font-size: 15px; 
+        padding-top: 40px;
+    }
+    .aboutUs-Subtitle{
+        font-size: 15px; 
+        margin-top: 10px;
+    }
+    .aboutUs-Text{
+        font-size: 12px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+    #aboutUs-Text2{
+        font-size: 9px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .line-aUs-header{
+        border-top: 3px solid #36BA94;
+        height: 2px;
+        max-width: 310px;
+    }
+    .line-aUs-Info{
+        border-top: 3px solid #36BA94;
+        height: 2px;
+        max-width: 40px;
+    }
+    .line-aUs-GetPS{
+        border-top: 5px solid #36BA94;
+        height: 2px;
+        max-width: 60px;
+    }
+    #image-aUs-Info{
+        margin-left: 10px;
+        margin-bottom: 20px;
+        height: 200px;
+    }
+    #image-aUs-Info2{
+        margin-top: 20px;
+        height: 200px;
+    }
+    
+    .borderLine-aUs{
+        border: .10px solid #36BA94;
+        margin: 50px;
+    }
+    .aboutUs-Button{
+        font-size: 10px;
+        padding: 3px;
+        padding-left: 10px;
+        color: white;
+        margin-bottom: 25px;
+        border: none;
+    }
+    .aboutUs-IconButton{
+        background: none;
+        border: none;
+        font-size: auto;
+        color: white;
+        padding: 5px;
+    }
+    .aboutUs-ContainerM{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .aboutUs-image{
+        text-align: center;
+    }
 }
