@@ -16,6 +16,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap" rel="stylesheet"
 		type='text/css'>
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <script src="https://kit.fontawesome.com/5ae938d5ba.js" crossorigin="anonymous"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -49,7 +51,7 @@
 									<a class="nav-link tipografia2nb" href="contacto.html"> CONTACTO</a>
 								</li>
 								<li class="nav-item">
-									<button class="index-ButtonIcon"><i class="fas fa-search"></i></button>
+									<a class="index-ButtonIcon" href="#"><i class="fas fa-search" style="color: #36ba94"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -59,7 +61,7 @@
 		</div>
 		<div class="inv-principal">
 			<div>
-				<h1 class="h1 title fw-bolder display-3">
+				<h1 class="h1 title ml-5 fw-bolder display-4 col-12 col-md-8">
 					INVENTARIO
 				</h1>
 			</div>
@@ -119,7 +121,7 @@
 			var i = 0
 			for (image of images_inv_med) {
 				Carrusel_med.innerHTML += `
-						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-12 col-md-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -155,7 +157,7 @@
 			var i = 0
 			for (image of images_inv_med) {
 				Carrusel_med.innerHTML += `
-						<div class="col-3" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-3 col-12" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -191,7 +193,7 @@
 			var i = 0
 			for (image of images_inv_med) {
 				Carrusel_med.innerHTML += `
-						<div class="col-3" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-3 col-12" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -222,7 +224,7 @@
 
 		<!--Seccion 2: industrial-->
 		<div class="row mt-5">
-			<div class="col-12 h1-title2">
+			<div class="col-12 h1-title2 text-center">
 				<h1>
 					INDUSTRIAL
 				</h1>
@@ -274,7 +276,7 @@
 			var i = 0
 			for (image of images_inv_indust) {
 				Carrusel_indust.innerHTML += `
-						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Industrial/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -310,7 +312,7 @@
 			var i = 0
 			for (image of images_inv_indust) {
 				Carrusel_indust.innerHTML += `
-						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Industrial/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -346,7 +348,7 @@
 			var i = 0
 			for (image of images_inv_indust) {
 				Carrusel_indust.innerHTML += `
-						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Industrial/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -377,7 +379,7 @@
 
 		<!--Seccion 2: electrico-->
 		<div class="row mt-5">
-			<div class="col-12 h1-title2">
+			<div class="col-12 h1-title2 text-center">
 				<h1>
 					ELÉCTRICO
 				</h1>
@@ -429,7 +431,7 @@
 			var i = 0
 			for (image of images_inv_electric) {
 				Carrusel_electric.innerHTML += `
-						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Eléctrico/${image}.jpg" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -465,7 +467,7 @@
 			var i = 0
 			for (image of images_inv_electric) {
 				Carrusel_electric.innerHTML += `
-						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Eléctrico/${image}.jpg" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -501,7 +503,7 @@
 			var i = 0
 			for (image of images_inv_electric) {
 				Carrusel_electric.innerHTML += `
-						<div class="col-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Eléctrico/${image}.jpg" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -537,10 +539,10 @@
 	<div class="inv-mensaje">
 		<div class="linea2 mb-4" style="width: 65px;"></div>
 		<div>
-			<h3 class="title2 mb-3">
+			<h3 class="title2 mb-3 text-ceneter">
 				Obtén un Servicio Profesional
 			</h3>
-			<p class="text-body-2">
+			<p class="text-body-2 mx-auto col-12 col-md-8">
 				Para todas las empresas mexicanas en el sector industrial es fundamental contar con un proveedor de suministros
 				confiable, ya que de esto depende qué parte de su producción y distribución pueda seguir en operaciones, y una mala 
 				selección de proveedor podría derivar en una pérdida económica.
@@ -550,7 +552,7 @@
 
 	<!-- footer -->
 	<section id="contact">
-		<div class="container">
+		<div class="container py-5">
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
 					<form action="#" method="get" class="wow fadeInUp" data-wow-delay="0.6s">
