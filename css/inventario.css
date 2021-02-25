@@ -16,6 +16,12 @@ nav{
     background: white;  
     border-bottom: 3px solid #36ba94;
 }
+.navbar-brand{
+    padding-left: 120px;
+}
+#navbarNav{
+    padding-right: 120px;
+}
 .inv-principal{
     background: url(../images/Inventario/Inventario.png);
     padding-top: 200px;
@@ -36,9 +42,19 @@ h1{
 .carousel{
     width: 100%;
 }
+
+p {
+line-height: 28px;
+font-size: 15px;
+}
+
+.bold {
+font-weight: bold;
+}
+
 .title{
     color: white;
-    border-bottom: 8px solid #36ba94;
+    border-bottom: 3px solid #36ba94;
     width : max-content;
     font-family: futura_bold;
 
@@ -143,7 +159,7 @@ h1{
   #contact h3 {
     font-size: 20px;
     font-weight: bold;
-    font-family: futura_book;
+    font-family: futura_bold;
     letter-spacing: 1px;
   }
   #contact .medium-icon {
@@ -328,3 +344,10 @@ contact section
     width: 20px;
     margin: 10px;
 }
+.linea-blanca {
+    border-top: 0.2rem solid white;
+    height: 0.2rem;
+    max-width: 20rem;
+    padding: 0;
+    margin: 0 auto 0 0;
+  }
