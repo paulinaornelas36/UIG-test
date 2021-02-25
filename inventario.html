@@ -18,6 +18,14 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
     
     <script src="https://kit.fontawesome.com/5ae938d5ba.js" crossorigin="anonymous"></script>
+    <script src="js/smoothscroll.js"></script>
+		<script src="js/isotope.js"></script>
+		<script src="js/imagesloaded.min.js"></script>
+		<script src="js/nivo-lightbox.min.js"></script>
+		<script src="js/jquery.backstretch.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -59,9 +67,9 @@
 				</nav>
 			</div>
 		</div>
-		<div class="inv-principal">
-			<div>
-				<h1 class="h1 title ml-5 fw-bolder display-4 col-12 col-md-8">
+		<div class="inv-principal row">
+			<div class="col-12 col-md-8">
+				<h1 class=" mx-auto h1 title fw-bolder fs-4 col-12 text-center">
 					INVENTARIO
 				</h1>
 			</div>
@@ -121,7 +129,7 @@
 			var i = 0
 			for (image of images_inv_med) {
 				Carrusel_med.innerHTML += `
-						<div class="col-12 col-md-3 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-6 col-lg-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -157,7 +165,7 @@
 			var i = 0
 			for (image of images_inv_med) {
 				Carrusel_med.innerHTML += `
-						<div class="col-md-3 col-12" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-6 col-lg-3 col-12" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -193,7 +201,7 @@
 			var i = 0
 			for (image of images_inv_med) {
 				Carrusel_med.innerHTML += `
-						<div class="col-md-3 col-12" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-6 col-lg-3 col-12" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Médico/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -276,7 +284,7 @@
 			var i = 0
 			for (image of images_inv_indust) {
 				Carrusel_indust.innerHTML += `
-						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-6 col-lg-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Industrial/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -312,7 +320,7 @@
 			var i = 0
 			for (image of images_inv_indust) {
 				Carrusel_indust.innerHTML += `
-						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-6 col-lg-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Industrial/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -348,7 +356,7 @@
 			var i = 0
 			for (image of images_inv_indust) {
 				Carrusel_indust.innerHTML += `
-						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-6 col-lg-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Industrial/${image}.png" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -431,7 +439,7 @@
 			var i = 0
 			for (image of images_inv_electric) {
 				Carrusel_electric.innerHTML += `
-						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-6 col-lg-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Eléctrico/${image}.jpg" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -467,7 +475,7 @@
 			var i = 0
 			for (image of images_inv_electric) {
 				Carrusel_electric.innerHTML += `
-						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-6 col-lg-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Eléctrico/${image}.jpg" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -503,7 +511,7 @@
 			var i = 0
 			for (image of images_inv_electric) {
 				Carrusel_electric.innerHTML += `
-						<div class="col-md-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
+						<div class="col-md-6 col-lg-3 col-12 justify-content-center" data-toggle="modal" data-target="#id${image}">
                 			<div class="card mx-auto" style="width: 14rem" >
                     			<img src="images/Inventario/Eléctrico/${image}.jpg" class="card-img-top" style="height: 13rem" >
                     			<div class="card-body">
@@ -565,7 +573,7 @@
 							<div><input type="text" class="form-control" placeholder="Deja tu correo aqui"></div>
 							<div><input type="submit" class="form-control2" value=">"></div>
 						</div>
-						<div class=>
+						<div class="">
 							<p>BLOG</p>
 							<p>AVISO DE PRIVACIDAD</p>
 							<div class="con">
@@ -607,14 +615,14 @@
 	</section>
 
 	<!-- footer section -->
-	<footer>
+	<footer class="row">
 
 		<div class="footer">
 
-			<p class="footer-size">@ 2020 UIF Company S.A. de C.V. Todos los derechos reservados </p>
+			<p class="footer-size col-12 col-md-8 col-lg-6 text-center">@ 2020 UIF Company S.A. de C.V. Todos los derechos reservados </p>
 
 
-			<p class="footer-size2">Politica de cookies</p>
+			<p class="footer-size2 col-12 col-md-4 col-lg-6 text-center">Politica de cookies</p>
 		</div>
 
 	</footer>

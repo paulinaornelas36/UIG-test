@@ -4,6 +4,7 @@ body
     background: #ffffff;
     font-weight: 400;
     position: relative;
+    overflow-x: hidden;
 }
 header{
     width: 100%;
@@ -22,8 +23,7 @@ nav{
 }
 .inv-mensaje{
     background-image: url(../images/Inventario/Almacen.png);
-    background-position-x: 50%;
-    background-position-y: 50%;
+    background-position: center;
     background-size: 1300px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -197,28 +197,134 @@ h1{
       width: 20px;
       margin: 10px;
   }
-  .footer{
-    background-color: #545454;
-    width: 100%;
-    height: 50px;
+ .footer{
+  background-color: #545454;
+  height: 50px;
+  display: flex;
+    align-items: center;
+     width: 100%;
+}
+
+.footer-size{
+  font-size: 20px;
+  color: #fff;
+  font-family: futura_book;
+}
+
+.footer-size2{
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  font-family: futura_book;
+  
+}
+
+
+@media screen and (min-width: 992px) {
+  @-moz-document url-prefix() {
+    #portfolio .col-lg-4,
+    #portfolio .col-md-4 {
+      width: 33.333%;
+    }
+  }    
+}
+.scrollup {
+	width: 50px;
+	height: 50px;
+	opacity: .3;
+	position: fixed;
+	bottom: 40px;
+	right: 25px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #000;
+	z-index: 10;
+	transition: opacity .5s, background-color .5s;
+	-moz-transition: opacity .5s, background-color .5s;
+	-webkit-transition: opacity .5s, background-color .5s;
+}
+.scrollup:hover {
+	background: #82ca9c;
+}
+.scrollup i {
+	font-size: 13px;
+	position: absolute;
+	color: #fff;
+	left: 50%;
+	top: 50%;
+	margin-top: -7px;
+	margin-left: -6px;
+	text-decoration: none;
+
+}
+  
+/* ==========================================================================
+contact section
+========================================================================== */
+#contact {
+  background: #3B3B3B url('../images/Imagen\ 16.png') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+}
+#contact h1 {
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-family: futura_bold;
+}
+#contact h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: futura_book;
+  letter-spacing: 1px;
+}
+#contact .medium-icon {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+#contact .contact-info div {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+#contact form {
+  padding-top: 60px;
+}
+#contact .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+  width: 200px;
+  height: 45px;
+}
+#contact .form-control2 {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+  width: 47px;
+  height: 47px;
+
+}
+#contact .form-control:focus {
+  border-color: #545454;
+}
+ .con {
     display: flex;
-      align-items: center;
+    align-items: center;
   }
-  
-  .footer-size{
-    font-size: 20px;
-    color: #fff;
-    font-family: futura_book;
-    margin-left: 10%;
-  }
-  
-  .footer-size2{
-    font-size: 20px;
-    color: #fff;
-    position: relative;
-    font-family: futura_book;
-    margin-left: 40%;
-    margin-top: 0px;
-    
-  }
-  
+
+#contact input {
+  height: 40px;
+}
+#contact input[type="submit"] {
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  letter-spacing: 1px;
+  margin-left: 0px;
+  height: 40px;
+  color: #545454;
+}
+#contact input[type="submit"]:hover {
+  color: #000000;
+}
+.redes{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
