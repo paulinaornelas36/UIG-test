@@ -1,0 +1,27 @@
+1. Guante Ansell (Imagen "Guantes 3")
+Bajo en pelusa. Para inspeccionar y empacar. Forro tejido de nylon.
+
+2. Casco de Seguridad (Imagen "Cascos")
+Casco para proteger la cabeza de quien lo usa de peligros y golpes.
+
+3. Chaleco de Rescate (Imagen "Chaleco 1")
+Chaleco de seguridad para rescatistas e integrantes de salvamento.
+
+4. Chaleco Reflectante (Imagen "Chaleco 2")
+Ayuda a mejorar la visibilidad del usuario por una fuente de luz.
+
+5. Guantes de Nylon (Imagen "Guantes 5")
+Guante de nylon con recubrimiento de poliuretano en la palma.
+
+6. Tapón Auditivo (Imagen "Tapones")
+Tapones auditivos fabricados con silicona con cordón de nylon.
+
+7. Cofia (Imagen "Cofia")
+Capa de polipropileno con banda elástica para ajuste y sujeción. Elástico.
+
+8. Mandil Microscopico (Imagen "Mandil")
+Mandil de tal microporosa. Cuenta con sujetadores en el cuello y cintura.
+
+9. Cintas (Imagen "Cintas")
+cinta adhesiva para proteger los productos en el embalaje.
+

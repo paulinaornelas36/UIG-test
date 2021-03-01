@@ -1,0 +1,353 @@
+body
+{
+    font-family: futura_book;
+    background: #ffffff;
+    font-weight: 400;
+    position: relative;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+}
+.nav-item{
+    font-family: futura_bold;
+}
+nav{
+    background: white;  
+    border-bottom: 3px solid #36ba94;
+}
+.navbar-brand{
+    padding-left: 120px;
+}
+#navbarNav{
+    padding-right: 120px;
+}
+#inv-principal{
+    background: url(../images/Inventario/Inventario.png);
+    background-position: center;
+    background-size: cover;
+}
+.inv-mensaje{
+    background-image: url(../images/Inventario/Almacen.png);
+    background-position: center;
+    background-size: 1300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+h1{
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.carousel{
+    width: 100%;
+}
+
+p {
+line-height: 28px;
+font-size: 15px;
+}
+
+.bold {
+font-weight: bold;
+}
+
+.title{
+    color: white;
+    border-bottom: 3px solid #36ba94;
+    width : max-content;
+    font-family: futura_bold;
+
+}
+.title2{
+    color: white;
+    font-family: futura_bold;
+}
+.seccion2{
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: url(../images/Inventario/Cuadricula.png);
+}
+.h1-title2{
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    font-family: futura_bold;
+
+}
+.card-body{
+    text-align: center;
+    border: 0.12rem solid #545454;
+    border-top: 0.3rem solid #545454;
+    background-color: white;
+    height: 10rem;
+    width: 100%;
+    box-shadow: 0px 1px 5px;
+    padding: 0.4rem;
+    text-align: center;
+}
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+
+}
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+.text-body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+}
+.text-body-2{
+    color: rgba(255, 255, 255, 0.877);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.linea{
+    border-top: 0.3rem solid #615d5d;
+    border-radius: 10rem;
+    height: 0.2rem;
+    max-width: 63.5rem;
+    padding: 0;
+    margin: 0.1rem auto 0 auto;
+  }
+  .linea2{
+    border-top: 0.3rem solid #36ba94;
+    border-radius: 10rem;
+    height: 0.2rem;
+    max-width: 63.5rem;
+    padding: 0;
+    margin: 0.1rem auto 0 auto;
+  }
+  ol.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    margin: -40px;
+    left: 0;
+    right: 0;
+    width: auto;
+  }
+  
+  ol.carousel-indicators li,
+  ol.carousel-indicators li.active {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border-radius: 100%;
+    border: 0;
+    background: #36ba94;
+  }
+  
+  ol.carousel-indicators li.active {
+    background: #36ba94;
+  }
+  #contact {
+    background: #3B3B3B url('../images/Imagen\ 16.png') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+  }
+  #contact h1 {
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-family: futura_bold;
+  }
+  #contact h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: futura_bold;
+    letter-spacing: 1px;
+  }
+  #contact .medium-icon {
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  #contact .contact-info div {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  #contact form {
+    padding-top: 60px;
+  }
+  #contact .form-control {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    width: 200px;
+    height: 45px;
+  }
+  #contact .form-control2 {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    width: 47px;
+    height: 47px;
+  
+  }
+  #contact .form-control:focus {
+    border-color: #545454;
+  }
+   .con {
+      display: flex;
+      align-items: center;
+    }
+  
+  #contact input {
+    height: 40px;
+  }
+  #contact input[type="submit"] {
+    background: #ffffff;
+    border: 3px solid #ffffff;
+    letter-spacing: 1px;
+    margin-left: 0px;
+    height: 40px;
+    color: #545454;
+  }
+  #contact input[type="submit"]:hover {
+    color: #000000;
+  }
+  .redes{
+      height: 20px;
+      width: 20px;
+      margin: 10px;
+  }
+ .footer{
+  background-color: #545454;
+  height: 50px;
+  display: flex;
+    align-items: center;
+     width: 100%;
+}
+
+.footer-size{
+  font-size: 20px;
+  color: #fff;
+  font-family: futura_book;
+}
+
+.footer-size2{
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  font-family: futura_book;
+  
+}
+
+
+@media screen and (min-width: 992px) {
+  @-moz-document url-prefix() {
+    #portfolio .col-lg-4,
+    #portfolio .col-md-4 {
+      width: 33.333%;
+    }
+  }    
+}
+.scrollup {
+	width: 50px;
+	height: 50px;
+	opacity: .3;
+	position: fixed;
+	bottom: 40px;
+	right: 25px;
+	color: #fff;
+	cursor: pointer;
+	background-color: #000;
+	z-index: 10;
+	transition: opacity .5s, background-color .5s;
+	-moz-transition: opacity .5s, background-color .5s;
+	-webkit-transition: opacity .5s, background-color .5s;
+}
+.scrollup:hover {
+	background: #82ca9c;
+}
+.scrollup i {
+	font-size: 13px;
+	position: absolute;
+	color: #fff;
+	left: 50%;
+	top: 50%;
+	margin-top: -7px;
+	margin-left: -6px;
+	text-decoration: none;
+
+}
+  
+/* ==========================================================================
+contact section
+========================================================================== */
+#contact {
+  background: #3B3B3B url('../images/Imagen\ 16.png') no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+}
+#contact h1 {
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-family: futura_bold;
+}
+#contact h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: futura_book;
+  letter-spacing: 1px;
+}
+#contact .medium-icon {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+#contact .contact-info div {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+#contact form {
+  padding-top: 60px;
+}
+#contact .form-control {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+  width: 200px;
+  height: 45px;
+}
+#contact .form-control2 {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 16px;
+  width: 47px;
+  height: 47px;
+
+}
+#contact .form-control:focus {
+  border-color: #545454;
+}
+ .con {
+    display: flex;
+    align-items: center;
+  }
+
+#contact input {
+  height: 40px;
+}
+#contact input[type="submit"] {
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  letter-spacing: 1px;
+  margin-left: 0px;
+  height: 40px;
+  color: #545454;
+}
+#contact input[type="submit"]:hover {
+  color: #000000;
+}
+.redes{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+.linea-blanca {
+    border-top: 0.2rem solid white;
+    height: 0.2rem;
+    max-width: 20rem;
+    padding: 0;
+    margin: 0 auto 0 0;
+  }
