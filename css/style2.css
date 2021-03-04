@@ -1035,7 +1035,7 @@ conatcto
     font-family: futura_bold;
     color: white;
     font-size: 25px; 
-    padding-top: 50px;
+    padding-top: 25px;
 }
 .aboutUs-Subtitle{
     font-family: futura_bold;
@@ -1055,10 +1055,10 @@ conatcto
     color: white;
     font-size: 15px;
     padding-top: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 .line-aUs-header{
-    border-top: 3px solid #36BA94;
+    border-top: 5px solid #36BA94;
     height: 2px;
     max-width: 580px;
     padding: 0;
@@ -1072,25 +1072,27 @@ conatcto
     margin: 0 auto 0 0;
     margin-top: 5px;
 }
+
 .line-aUs-GetPS{
-    border-top: 3.5px solid #36BA94;
-    border-radius: 10rem;
+    border-top: 4px solid #36BA94;
     height: 2px;
-    max-width: 60px;
-    margin: 50px auto -35px auto;
-}
-#image-aUs-Info{
-    margin-left: 70px;
-    margin-top: 30px;
-    height: 350px;
-}
-#image-aUs-Info2{
-    margin-top: 20px;
-    margin-bottom: 50px;
-    margin-left: 70px;
-    height: 350px;
+    max-width: 70px;
+    margin: 0 auto;
+    padding-bottom: 25px;
 }
 
+#image-aUs-Info{
+    margin-left: 60px;
+    margin-top: 15px;
+    height: 350px;
+
+}
+#image-aUs-Info2{
+    margin-top: 1px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    height: 350px;
+}
 .borderLine-aUs{
     border: .10px solid #36BA94;
     margin: 50px;
@@ -1116,7 +1118,33 @@ conatcto
     padding-top: 35px;
     padding-bottom: 35px;
 }
-
+/*Modificaciones*/
+.logo-header{
+    width: auto;
+    height: 65px;
+}
+.icon-triangle{
+    background: white;
+    border: none;
+    padding-right: 10px;
+    font-size: 17px;
+    color:#36ba94; 
+}
+.line-aUs-header{
+    border-top: 5px solid #36BA94;
+    height: 2px;
+    max-width: 580px;
+    padding: 0;
+    margin: 0 auto 0 0;
+}
+.aboutUs-image1{
+    background: url('../images/Marco.PNG') center no-repeat;
+    background-size: auto 400px;
+}
+.aboutUs-image2{
+    background: url('../images/Marco.PNG') center no-repeat;
+    background-size: auto 400px;
+}
 /*Extra large deices (large desktop,1200px and up)*/
 @media (max-width:1200px){
     #aboutUs-Title{
@@ -1140,7 +1168,7 @@ conatcto
     #aboutUs-Text2{
         font-size: 15px;
         padding-top: 15px;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
     }
     .line-aUs-header{
         border-top: 3px solid #36BA94;
@@ -1152,21 +1180,28 @@ conatcto
         height: 2px;
         max-width: 60px;
     }
-    .line-aUs-GetPS{
-        border-top: 5px solid #36BA94;
-        height: 2px;
-        max-width: 60px;
-    }
+
     #image-aUs-Info{
-        margin-left: 70px;
-        margin-top: 30px;
+        margin-left: 25px;
+        margin-top: 35px;
         height: 350px;
+    
     }
     #image-aUs-Info2{
-        margin-top: 20px;
+        margin-top: 1px;
         margin-bottom: 50px;
-        margin-left: 70px;
+        margin-left: 10px;
         height: 350px;
+    }
+    .aboutUs-image1{
+        background-size: auto 400px;
+        align-items: center;
+    
+    }
+    .aboutUs-image2{
+        background-size: auto 400px;
+        align-items: center;
+    
     }
     .borderLine-aUs{
         border: .10px solid #36BA94;
@@ -1191,9 +1226,12 @@ conatcto
         padding-top: 35px;
         padding-bottom: 35px;
     }
+    
 }
+
 /*Large devices(desktops,992px and up)*/
-@media (max-width: 990px){
+@media (max-width: 991px){
+    
     #aboutUs-Title{
         font-size: 50px;
         padding-top: 130px;
@@ -1214,10 +1252,10 @@ conatcto
     #aboutUs-Text2{
         font-size: 14px;
         padding-top: 15px;
-        padding-bottom: 40px;
+        padding-bottom: 25px;
     }
     .line-aUs-header{
-        border-top: 3px solid #36BA94;
+        border-top: 5px solid #36BA94;
         height: 2px;
         max-width: 485px;
     }
@@ -1226,23 +1264,30 @@ conatcto
         height: 2px;
         max-width: 50px;
     }
-    .line-aUs-GetPS{
-        border-top: 5px solid #36BA94;
-        height: 2px;
-        max-width: 60px;
-    }
     #image-aUs-Info{
-        margin-left: 10px;
-        margin-top: 30px;
-        height: 320px;
+        margin-left: 5px;
+        margin-top: 55px;
+        height: 300px;
+    
     }
     #image-aUs-Info2{
-        margin-top: 20px;
+        margin-top: 25px;
         margin-bottom: 50px;
-        margin-left: 15px;
-        height: 320px;
+        margin-left: 10px;
+        height: 290px;
     }
+    .aboutUs-image1{
+        background-size: auto 350px;
+        background-position: right;
+        align-items: center;
+        
+    }
+    .aboutUs-image2{
+        background-size: auto 350px;
+        background-position: right;
+        align-items: center;
     
+    }
     .borderLine-aUs{
         border: .10px solid #36BA94;
         margin: 50px;
@@ -1271,6 +1316,18 @@ conatcto
 /*Medium devices (tablets,768px and up)*/
 @media(max-width: 766px)
 {   
+    .logo-header{
+        width: auto;
+        height: 55px;
+    }
+    .icon-triangle{
+        font-size: 15px; 
+    }
+    .tipografianb{
+        font-family: futura_bold;
+        color: #7b7b7b;
+        font-size: 13px;
+    }
     #aboutUs-Title{
         font-size: 40px;
         padding-top: 130px;
@@ -1281,7 +1338,7 @@ conatcto
         margin-top: 20px;
     }
     .line-aUs-header{
-        border-top: 3px solid #36BA94;
+        border-top: 5px solid #36BA94;
         height: 2px;
         max-width: 390px;
         padding: 0;
@@ -1292,20 +1349,35 @@ conatcto
         height: 2px;
         max-width: 50px;
     }
-    .line-aUs-GetPS{
-        border-top: 5px solid #36BA94;
-        height: 2px;
-        max-width: 60px;
-    }
+
     #image-aUs-Info{
-        margin-left: 10px;
-        margin-bottom: 20px;
-        height: 300px;
+        margin-left: 115px;
+        margin-top: -5px;
+        height: 230px;
+    
     }
     #image-aUs-Info2{
-        margin-top: 20px;
-        margin-left: 15px;
-        height: 300px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        margin-left: 105px;
+        height: 230px;
+    }
+    .aboutUs-image1{
+        background-size: auto 270px;
+        background-position: center;
+        margin-top:20px;
+        height:270px;
+        align-items: center;
+        
+    }
+    .aboutUs-image2{
+        background-size: auto 270px;
+        background-position: center;
+        margin-bottom:20px;
+        margin-top: 30px;
+        height:270px;
+        align-items: center;
+    
     }
     
     .borderLine-aUs{
@@ -1334,9 +1406,17 @@ conatcto
     .aboutUs-image{
         text-align: center;
     }
+    .aboutUs-image{
+        text-align: center;
+    }
 }
 /*Small devices (lanscape phones, 576px and up)*/
 @media(max-width: 576px){
+    .tipografianb{
+        font-family: futura_bold;
+        color: #7b7b7b;
+        font-size: 13px;
+    }
     #aboutUs-Title{
         font-size: 32px;
         padding-top: 130px;
@@ -1358,10 +1438,10 @@ conatcto
     #aboutUs-Text2{
         font-size: 9px;
         padding-top: 15px;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
     }
     .line-aUs-header{
-        border-top: 3px solid #36BA94;
+        border-top: 5 solid #36BA94;
         height: 2px;
         max-width: 310px;
     }
@@ -1370,32 +1450,35 @@ conatcto
         height: 2px;
         max-width: 40px;
     }
-    .line-aUs-GetPS{
-        border-top: 5px solid #36BA94;
-        height: 2px;
-        max-width: 60px;
-    }
     #image-aUs-Info{
-        margin-left: 10px;
-        margin-bottom: 20px;
-        height: 200px;
+        margin-left: -45px;
+        margin-top: -5px;
+        height: 180px;
+
     }
     #image-aUs-Info2{
-        margin-top: 20px;
-        height: 200px;
+        margin-top: -10px;
+        margin-left: -40px;
+        height: 180px;
     }
+    .aboutUs-image1{
+        background-size: auto 210px;
+        background-position: center;
+        margin-top:20px;
+        height:210px;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .aboutUs-image2{
+        background-size: auto 210px;
+        background-position: center;
+        margin-bottom:20px;
+        margin-top: 30px;
+        height:210px;
+        align-items: center;
+        text-align: center;
     
-    .borderLine-aUs{
-        border: .10px solid #36BA94;
-        margin: 50px;
-    }
-    .aboutUs-Button{
-        font-size: 10px;
-        padding: 3px;
-        padding-left: 10px;
-        color: white;
-        margin-bottom: 25px;
-        border: none;
     }
     .aboutUs-IconButton{
         background: none;
