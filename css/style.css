@@ -130,7 +130,7 @@ padding-bottom: 100px;
 }
 .product-catalog img
 {
-    height:16rem;
+    height:auto;
     width:100%;
 }
 .product-catalog h2
@@ -796,13 +796,9 @@ conatcto
 .tipografianb{
     font-family: futura_bold;
     color: #7b7b7b;
-    font-size: 15px;
+    font-size: 17px;
 }
-.tipografia2nb{
-    font-family: futura_bold;
-    color: #d9d9d9;
-    font-size: 15px;
-}
+
 
 .index-ButtonIcon{
     background: white;
@@ -1111,11 +1107,11 @@ conatcto
     margin-top: 5px;
 }
 .line-aUs-GetPS{
-    border-top: 5px solid #36BA94;
+    border-top: 3.5px solid #36BA94;
+    border-radius: 10rem;
     height: 2px;
     max-width: 60px;
-    margin: 0 auto 0 0;
-    align-items: center;
+    margin: 50px auto -35px auto;
 }
 #image-aUs-Info{
     margin-left: 70px;
@@ -1154,7 +1150,25 @@ conatcto
     padding-top: 35px;
     padding-bottom: 35px;
 }
-
+/*Modificaciones*/
+.logo-header{
+    width: auto;
+    height: 65px;
+}
+.icon-triangle{
+    background: white;
+    border: none;
+    padding-right: 10px;
+    font-size: 17px;
+    color:#36ba94; 
+}
+.line-aUs-header{
+    border-top: 5px solid #36BA94;
+    height: 2px;
+    max-width: 580px;
+    padding: 0;
+    margin: 0 auto 0 0;
+}
 /*Extra large deices (large desktop,1200px and up)*/
 @media (max-width:1200px){
     #aboutUs-Title{
@@ -1375,6 +1389,11 @@ conatcto
 }
 /*Small devices (lanscape phones, 576px and up)*/
 @media(max-width: 576px){
+    .tipografianb{
+        font-family: futura_bold;
+        color: #7b7b7b;
+        font-size: 13px;
+    }
     #aboutUs-Title{
         font-size: 32px;
         padding-top: 130px;
