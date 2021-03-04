@@ -130,7 +130,7 @@ padding-bottom: 100px;
 }
 .product-catalog img
 {
-    height:16rem;
+    height:auto;
     width:100%;
 }
 .product-catalog h2
